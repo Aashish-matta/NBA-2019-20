@@ -22,5 +22,5 @@ pheatmap(df_num_scale,cluster_cols = F,annotation_row = pos_df,main = "Pheatmap 
 cat_am = data.frame("category" =c(rep("other",3),rep("Off",13),rep("Def",3),"Off",rep("Def",2),rep("other",2),"Off"))
 rownames(cat_am) = colnames(df_num)
 pheatmap(am_number_scale,cluster_rows = F, annotation_col = cat_df,main = "Pheatmap Column Annotation")
-pheatmap(am_number_scale,cutree_rows = 10,main = "Pheatmap Row Cut in 10")
-pheatmap(am_number_scale,cutree_cols = 10,main = "Pheatmap Column Cut in 10")
+pheatmap(am_number_scale,cutree_rows = 10,main = "Pheatmap Row Cut in 10") # change n for creating personaised rows
+pheatmap(am_number_scale,cutree_cols = 10,main = "Pheatmap Column Cut in 10") # change n for creating personaised columns
